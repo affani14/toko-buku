@@ -5,10 +5,13 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Home::index');
-$routes->get('/About', 'Page::about');
-$routes->get('/Contact', 'Page::contact');
+
+$routes->get('/', 'Pages::index');
+$routes->get('about', 'Pages::about');
+$routes->get('contact', 'Pages::contact');
 $routes->get('/Faqs', 'Page::faqs');
 $routes->get('/Tos', 'Page::tos');
 $routes->get('/Biodata', 'Page::biodata');
+$routes->get('home', 'Pages::index');
+
 $routes->setAutoRoute(false);
