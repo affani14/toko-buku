@@ -20,6 +20,7 @@
                     <a class="nav-link active" aria-current="page" href="<?= base_url(''); ?>">Home</a>
                     <a class="nav-link" href="<?= base_url('/about'); ?>">About</a>
                     <a class="nav-link" href="<?= base_url('/contact'); ?>">Contact Us</a>
+                    <a class="nav-link" href="<?= base_url('/projects'); ?>">Projects</a>
                     <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                 </div>
             </div>

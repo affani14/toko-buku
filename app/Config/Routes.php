@@ -13,5 +13,6 @@ $routes->get('/Faqs', 'Page::faqs');
 $routes->get('/Tos', 'Page::tos');
 $routes->get('/Biodata', 'Page::biodata');
 $routes->get('home', 'Pages::index');
+$routes->get('projects', 'Pages::projects');
 
 $routes->setAutoRoute(false);

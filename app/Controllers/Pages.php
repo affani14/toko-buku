@@ -16,7 +16,7 @@ class Pages extends BaseController
     public function about()
     {
         $data = [
-            'title' => 'Home | Unipdu Press',
+            'title' => 'About | Unipdu Press',
             'tes' => ['satu', 'dua', 'tiga']
         ];
         return view('pages/about', $data);
@@ -24,7 +24,7 @@ class Pages extends BaseController
     public function contact()
     {
         $data = [
-            'title' => 'Home | Unipdu Press',
+            'title' => 'Contact Us| Unipdu Press',
             'alamat' => [
                 [
                     'tipe'   => 'Rumah',
@@ -39,5 +39,31 @@ class Pages extends BaseController
             ]
         ];
         return view('pages/contact', $data);
+    }
+    public function projects()
+    {
+
+        $data['projects'] = [
+            [
+                'name' => 'Proyek A',
+                'description' => 'Deskripsi proyek A',
+                'status' => 'Ongoing'
+            ],
+            [
+                'name' => 'Proyek B',
+                'description' => 'Deskripsi proyek B',
+                'status' => 'Completed'
+            ],
+            [
+                'name' => 'Proyek C',
+                'description' => 'Deskripsi proyek C',
+                'status' => 'Ongoing'
+            ]
+        ];
+
+
+        $data['title'] = 'Projects | Unipdu Press';
+
+        return view('pages/projects', $data);
     }
 }
