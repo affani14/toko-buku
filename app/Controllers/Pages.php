@@ -7,7 +7,7 @@ class Pages extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Home | Unipdu Press',
+            'title' => 'Neon Jepang | Lampu Neon Berkualitas',
             'tes' => ['satu', 'dua', 'tiga']
         ];
         return view('pages/home', $data);
@@ -16,7 +16,7 @@ class Pages extends BaseController
     public function about()
     {
         $data = [
-            'title' => 'About | Unipdu Press',
+            'title' => 'About | Neon Jepang',
             'tes' => ['satu', 'dua', 'tiga']
         ];
         return view('pages/about', $data);
@@ -24,11 +24,11 @@ class Pages extends BaseController
     public function contact()
     {
         $data = [
-            'title' => 'Contact Us| Unipdu Press',
+            'title' => 'Contact Us| Neon Jepang',
             'alamat' => [
                 [
                     'tipe'   => 'Rumah',
-                    'alamat' => 'Jl. Pasar Krapak no 87',
+                    'alamat' => 'Jl. Pasar Krapak ',
                     'kota'   => 'Jombang'
                 ],
                 [
@@ -40,10 +40,10 @@ class Pages extends BaseController
         ];
         return view('pages/contact', $data);
     }
-    public function projects()
+    public function product()
     {
 
-        $data['projects'] = [
+        $data['product'] = [
             [
                 'name' => 'Proyek A',
                 'description' => 'Deskripsi proyek A',
@@ -62,8 +62,8 @@ class Pages extends BaseController
         ];
 
 
-        $data['title'] = 'Projects | Unipdu Press';
+        $data['title'] = 'Product | Neon Jepang';
 
-        return view('pages/projects', $data);
+        return view('pages/product', $data);
     }
 }

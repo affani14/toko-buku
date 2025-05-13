@@ -1,15 +1,9 @@
 <?= $this->extend('layout/template'); ?>
 
 <?= $this->section('content'); ?>
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <h1>Home</h1>
-            <?php var_dump($tes); ?>
+<section class="hero-tagline">
+    <h1 class="neon-cyan">Menerangi malammu dengan gaya</h1>
+    <p class="neon-pink">Lampu neon kami terinspirasi oleh cahaya malam kota tokyo</p>
+</section>
 
-        </div>
-
-    </div>
-
-</div>
 <?= $this->endSection(); ?>
