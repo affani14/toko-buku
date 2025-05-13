@@ -4,11 +4,10 @@ namespace App\Controllers;
 
 class Pages extends BaseController
 {
-    public function index()
+    public function home()
     {
         $data = [
-            'title' => 'Neon Jepang | Lampu Neon Berkualitas',
-            'tes' => ['satu', 'dua', 'tiga']
+            'title' => 'Neon Jepang | Lampu Neon Berkualitas'
         ];
         return view('pages/home', $data);
     }
@@ -65,5 +64,43 @@ class Pages extends BaseController
         $data['title'] = 'Product | Neon Jepang';
 
         return view('pages/product', $data);
+    }
+
+
+    public function index()
+    {
+        $data = ['title' => 'My Portofolio'];
+        return view('pages/homeporto', $data);
+    }
+
+    public function aboutme()
+    {
+        $data = [
+            'title' => 'About Me'
+        ];
+        return view('pages/aboutme',  $data);
+    }
+
+    public function contactme()
+    {
+        $data = [
+            'title' => 'Contact Me',
+            'alamat' => [
+                [
+                    'tipe'   => 'Rumah',
+                    'alamat' => 'Jl. Pasar Krapak ',
+                    'kota'   => 'Jombang'
+                ],
+            ]
+        ];
+        return view('pages/contactme', $data);
+    }
+
+    public function portofolio()
+    {
+        $data = [
+            'title' => 'My Portofolio'
+        ];
+        return view('pages/portofolio', $data);
     }
 }
